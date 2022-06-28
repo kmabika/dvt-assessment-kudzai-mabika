@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/lodash': ^4.14.182
   '@types/node': 18.0.0
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
@@ -8,6 +9,7 @@ specifiers:
   axios: ^0.27.2
   eslint: 8.18.0
   eslint-config-next: 12.1.6
+  lodash: ^4.17.21
   next: 12.1.6
   react: 18.2.0
   react-dom: 18.2.0
@@ -17,6 +19,7 @@ specifiers:
 
 dependencies:
   axios: 0.27.2
+  lodash: 4.17.21
   next: 12.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -24,6 +27,7 @@ dependencies:
   styled-components: 5.3.5_ioqvsn6irm33o3eeiglthc2j6q
 
 devDependencies:
+  '@types/lodash': 4.14.182
   '@types/node': 18.0.0
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
@@ -382,6 +386,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash/4.14.182:
+    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: true
 
   /@types/node/18.0.0:
