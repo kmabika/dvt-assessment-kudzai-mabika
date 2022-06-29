@@ -1,1 +1,1 @@
-export {default} from './ArtistPageLayout';
+export {default} from './ArtistPageLayout.component';

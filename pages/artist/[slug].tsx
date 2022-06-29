@@ -1,10 +1,9 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import { useRouter } from "next/router";
 import ArtistPageLayout from "layout/ArtistPageLayout";
+import {API_URL} from 'lib';
 
 interface Props {
-  artist: Artist;
-  tracklist: TrackList
+  artist: ArtistDetailType;
+  tracklist: TrackListType[]
 }
 
 const Arist = ({ artist,tracklist}: Props) => {
@@ -14,8 +13,8 @@ const Arist = ({ artist,tracklist}: Props) => {
 export const getServerSideProps = async (context: any) => {
   try {
     const { slug } = context.params;
-    const res = await fetch(`https://api.deezer.com/artist/${slug}`);
-    const tracklistReq = await fetch(`https://api.deezer.com/artist/${slug}/top?limit=5`)
+    const res = await fetch(`${API_URL}/artist/${slug}`);
+    const tracklistReq = await fetch(`${API_URL}/artist/${slug}/top?limit=10`)
     const json = await res.json();
     const tracklist  = await tracklistReq.json();
     return { props: { 

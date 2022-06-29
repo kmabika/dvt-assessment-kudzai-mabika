@@ -1,63 +1,50 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
-        font-weight: 400;
-        font-family: 'Quicksand', sans-serif;
-        transform: translate3d(0);
-        scroll-behavior: smooth;
+import RootVars from './root'
+import Reset from './reset'
+import Typography from './typography'
+import theme from 'styles/theme';
+
+// ___________________________________________________________________
+
+const GlobalStyles = createGlobalStyle`
+  ${RootVars}
+  ${Reset}
+  ${Typography}
+  
+  body {
+    color: ${theme.colors.text};
+    background: ${theme.colors.background};
+    border: 0;
+
+  }
+  
+  html,
+  a,
+  button {
+    &:hover {
+      color: ${theme.colors.primary};
     }
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-    /* Firefox */
-    input[type=number] {
-    -moz-appearance: textfield;
-    }
+  } 
+  li {
+    list-style: none;
+  }
+  h6 {
+    text-decoration: underline;
+  }
+  .image-container {
+    position: relative;
     
-    ::-webkit-scrollbar {
-        width: 0;
-    }    
-    input,
-    button {
-        width: max-content;
-        padding: 1em;
-        background: none;
-        font-size: 16px;
-        border: none;
-    }
-    input:focus,
-    button:focus {
-        outline: none;
-    }
-    button {
-        cursor: pointer;
-    }
-    label {
-        font-weight: 700 !important;
-    }
-    img {
+    .image {
         width: 100%;
         height: 100%;
-        object-fit: cover !important;
-        object-position: center !important;
+        position: relative !important;
+        object-fit: cover; // Optional
     }
-    h1,h2,h3,h4,h5,h6{
-        font-weight: 800;
-    }
-    a {
-        text-decoration: none;
-      }
-      li {
-        list-style: none;
-      }
-`;
+}
+
+`
+
+export default GlobalStyles
+
+// ___________________________________________________________________

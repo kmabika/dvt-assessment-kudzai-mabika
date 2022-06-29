@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { theme } from "styles/theme";
+import theme from "styles/theme";
 import GlobalStyles from "styles/global";
 import { ThemeProvider } from "styled-components";
 
@@ -17,7 +17,7 @@ const Provider = ({ children }: any) => {
     </ThemeProvider>
   );
 
-  // prevents ssr flash for mismatched dark mode
+  // prevents ssr flash
   if (!mounted) {
     return <div style={{ visibility: "hidden" }}>{body}</div>;
   }

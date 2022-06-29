@@ -1,17 +1,26 @@
-import { CategoryProductListWrapper } from './styled';
-import ArtistCard from 'components/ArtistCard';
+// Artist List:
+
+// ___________________________________________________________________
+
+// Components
+import ArtistCard from "components/ArtistCard";
+
+// Styled Components
+import * as S from './styles.scss';
+
 interface Props {
-  artists: ArtistsType
+  artists: ArtistDataType[];
 }
 
-const ArtistList = ({artists}: Props) => {
+const ArtistList = ({ artists }: Props) => {
+
   return (
-    <CategoryProductListWrapper>
-     {artists.map((artist: ArtistType) => (
-      <ArtistCard key={artist.id} artist={artist} />
-     ))}
-    </CategoryProductListWrapper>
-  )
-}
+    <S.ArtistListWrapper>
+      {artists.map((artist: ArtistDataType) => (
+        <ArtistCard key={artist.id} artist={artist} />
+      ))}
+    </S.ArtistListWrapper>
+  );
+};
 
-export default ArtistList
+export default ArtistList;

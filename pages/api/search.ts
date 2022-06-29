@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
+import { Request, Response } from "express";
 import { API_URL } from "lib";
+
 
 export default async ({ body }: Request, res: Response) => {
   const {  criteria } = JSON.parse(body);

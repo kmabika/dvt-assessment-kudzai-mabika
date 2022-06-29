@@ -1,1 +1,1 @@
-export {default} from './ArtistCard.container'
+export {default} from './ArtistCard.component'

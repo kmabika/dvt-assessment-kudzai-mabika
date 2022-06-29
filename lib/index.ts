@@ -1,3 +1,1 @@
-import { API_URL } from "./api";
-
-export {API_URL};
+export const API_URL = "https://api.deezer.com";
