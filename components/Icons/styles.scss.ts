@@ -12,6 +12,7 @@ import theme from 'styles/theme'
 // ___________________________________________________________________
 
 const IconStyle = styled.span`
+  color: ${props => (props.color ? props.color : theme.colors.black)};
   font-size: 1rem;
   line-height: 0;
   display: inline-flex;
@@ -19,7 +20,6 @@ const IconStyle = styled.span`
   justify-content: center;
   padding: 0;
   margin: 0;
-  color: ${props => (props.color ? props.color : theme.colors.black)};
 
   svg {
     fill: ${props => (props.color ? props.color : theme.colors.black)};

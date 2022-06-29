@@ -2,19 +2,19 @@
 
 // ___________________________________________________________________
 
-import styled from 'styled-components'
-import theme from 'styles/theme'
-import { Box, Flex } from 'shared'
+import styled from "styled-components";
+import theme from "styles/theme";
+import { Box, Flex } from "shared";
 
 // ___________________________________________________________________
 
 export const Billboard = styled(Flex)`
-  overflow: hidden;
   padding-top: calc(${theme.space[5]});
   position: relative;
   height: auto;
   width: 100%;
   z-index: 99;
+  overflow: hidden;
 
   color: ${theme.colors.white};
 
@@ -56,6 +56,6 @@ export const Billboard = styled(Flex)`
       }
     }
   }
-`
+`;
 
-export const Telephone = styled(Box)``
+export const Telephone = styled(Box)``;

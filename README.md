@@ -1,7 +1,5 @@
 <div id="top"></div>
 
-
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
@@ -9,7 +7,7 @@
   <h3 align="center">Kudzai Mabika • DVT Deezer Assessment</h3>
 
   <p align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View Demo »</strong></a>
+    <a href="https://dvt-assessment-kudzai.vercel.app/"><strong>View Demo »</strong></a>
     <br />
   </p>
 </div>
@@ -87,7 +85,5 @@ This project requires [PNPM](https://pnpm.io/).
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/kudzaimabika/

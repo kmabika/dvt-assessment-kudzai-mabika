@@ -4,7 +4,7 @@
 // ___________________________________________________________________
 
 
-import React from "react";
+import {useEffect, useRef} from "react";
 import { debounce } from "lodash";
 
 // Import Component
@@ -40,14 +40,14 @@ const HeaderContainer = ({
     }
   }
 
-  const debouncedSearch = React.useRef(
+  const debouncedSearch = useRef(
     debounce(async (criteria) => {
       updateArtists && updateArtists(await search(criteria))!;
       updateSearchQuery && updateSearchQuery(criteria);
     }, 500)
   ).current;
 
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       debouncedSearch.cancel();
     };

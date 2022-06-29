@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import theme from 'styles/theme'
+import styled from "styled-components";
+import theme from "styles/theme";
 
-import {Flex} from 'shared'
+import { Flex } from "shared";
 
 export const PageLayoutContainer = styled.div`
   background: #fff;
@@ -11,13 +11,11 @@ export const PageLayoutContainer = styled.div`
 export const MainContent = styled.main`
   width: 100%;
   padding: 80px 100px;
-
   
-@media only screen and (max-width: 600px) {
-  padding: 20px 0px;
-} 
+  @media only screen and (max-width: 600px) {
+    padding: 20px 0px;
+  }
 `;
-
 
 export const Wrapper = styled(Flex)`
   flex-direction: column;
@@ -31,4 +29,4 @@ export const Wrapper = styled(Flex)`
   @media ${theme.mq.tablet} {
     flex-direction: row;
   }
-`
+`;

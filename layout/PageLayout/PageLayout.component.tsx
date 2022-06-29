@@ -14,7 +14,7 @@ const PageLayout = () => {
   let [artistsData, setArtistsData] = useState<ArtistDataType[]>([]);
   let [searchQuery, setSearchQuery] = useState<string>("");
 
-  const [currentURL, setCurrentURL] = useState('https://kudzaim.codes/');
+  const [currentURL, setCurrentURL] = useState('https://dvt-assessment-kudzai.vercel.app/');
   const router = useRouter();
 
   useEffect(() => {

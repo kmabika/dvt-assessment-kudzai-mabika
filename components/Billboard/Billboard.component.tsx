@@ -11,6 +11,7 @@ import * as S from "./styles.scss";
 // Shared
 import { Box, Flex, Text, Heading } from "shared";
 
+import theme from 'styles/theme';
 // ___________________________________________________________________
 
 type Props = {
@@ -19,7 +20,7 @@ type Props = {
 
 const Billboard = ({ artist }: Props) => {
   return (
-    <S.Billboard bg={"#52C3B8"} p={4}>
+    <S.Billboard bg={theme.colors.primary} p={4}>
       <Flex className="inner">
         <Box>
           <Heading as="h2" mb={0} className="t--uppercase">
