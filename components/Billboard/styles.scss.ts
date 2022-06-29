@@ -30,7 +30,7 @@ export const Billboard = styled(Flex)`
     flex-wrap: wrap;
     width: 100%;
 
-    .contact {
+    .stats {
       flex-wrap: wrap;
       opacity: 0;
       transform: ${theme.transform.matrix.from};

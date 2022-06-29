@@ -26,7 +26,7 @@ const Billboard = ({ artist }: Props) => {
             {artist.name}
           </Heading>
         </Box>
-        <Flex mt={[7, 0]} className={`contact show`}>
+        <Flex mt={[7, 0]} className={`stats show`}>
           <Flex flexDirection="column" flex={2}>
             <S.Telephone>
               <Text fontSize={"2rem"} className="t--uppercase">
