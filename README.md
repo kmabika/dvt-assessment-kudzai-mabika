@@ -1,34 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="top"></div>
 
+
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<br />
+<div align="center">
+  <h3 align="center">Kudzai Mabika • DVT Deezer Assessment</h3>
+
+  <p align="center">
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>View Demo »</strong></a>
+    <br />
+  </p>
+</div>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img src="./demo-images/screen-shot.png">
+<br/>
+<br>
+A Music App built with Next.JS. Consuming the deezer api.
+This project uses the Container Component Pattern separating the presentational part from the complex business logic. 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+
+* [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Styled Components](https://vuejs.org/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project requires [PNPM](https://pnpm.io/).
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+* pnpm
+  ```sh
+  npm install -g pnpm
+  ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/kmabika/dvt-assessment-kudzai-mabika.git
+   ```
+2. Install PNPM packages
+   ```sh
+   pnpm install
+   ```
+3. View project on your local development server
+   ```js
+   pnpm dev
+   ```
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<!-- USAGE EXAMPLES -->
+## Usage
 
-## Deploy on Vercel
+<details>
+  <summary>Screen Shots</summary>
+  <img src="./demo-images/demo.png" name="image-name">
+  <img src="./demo-images/demo-2.png" name="image-name">
+  <img src="./demo-images/demo-3.png" name="image-name">
+</details>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/kudzaimabika/
