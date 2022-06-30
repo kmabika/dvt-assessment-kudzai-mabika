@@ -16,7 +16,9 @@ const GlobalStyles = createGlobalStyle`
     color: ${theme.colors.text};
     background: ${theme.colors.background};
     border: 0;
-
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   
   html,
